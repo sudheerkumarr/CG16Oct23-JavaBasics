@@ -1,0 +1,13 @@
+package pkg1;
+
+// POJO class
+public class Customer {
+	private int id;
+	private String name;
+	private String contactNo;
+	
+	
+	// Constructors
+	// Getters & Setters
+	// toString()
+}

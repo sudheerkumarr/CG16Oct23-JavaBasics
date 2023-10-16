@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		
+	Scanner sc	= new Scanner(System.in);
+	
+	System.out.println("Enter firstNumber");
+	int num1 = sc.nextInt();
+	System.out.println("Enter secondNumber");
+	int num2 = sc.nextInt();
+	
+	System.out.println(num1/num2); 
+	}
+
+}
