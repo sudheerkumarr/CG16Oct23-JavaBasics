@@ -1,0 +1,117 @@
+Wrapper Classes
+===============
+  - Primitive data type - 8 types
+    int, long , short , byte, boolean, char, float double
+   
+   
+  - Serialization/Collections/Synchronization/Cloning works on objects
+  
+  - java.lang pkg provides all wrapper classes to convert primitive to 
+    object type
+  
+  int     - java.lang.Integer
+  long    - java.lang.Long
+  double  - java.lang.Double
+  short   - java.lang.Short
+  byte    - java.lang.Byte
+  boolean - java.lang.Boolean
+  char    - java.lang.Character
+  float   - java.lang.Float
+  
+  
+ - Convert primitive to Object
+    - valueOf() - method 
+    - Autoboxing
+   
+ - Convert Object to primitive
+    - xxxValue()
+    - Autounboxing 
+   
+ - Convert Wrapper Obj to String
+   - toString()
+  
+ - Convert String to Wrapper Obj
+     - valueOf()
+  
+  
+ - Primitive to String 
+     - valueOf()
+ 	
+ - String to primitive data types
+    - parseInt(), parseDouble()
+ 
+==================================================
+Collection(I)
+==========
+ - To represent a group of elements as a single entity
+   List(I)
+
+     ArrayList(C)
+            - insertion order to be maintained
+             - duplicates allowed
+             - null values are allowed
+             - Heterogeneous elements are allowed
+             - Based on Dynamic array
+             - re-sizable
+             - methods are not synchronized
+             - not thread safe
+             - can be accessed using index
+             - initial capacity - 10
+             - incremental capacity - (current capacity * 3/2)+1
+             - frequent operation retrieval
+             - able to access elements randomly
+      LinkedList(C)
+             - LinkedList internally uses a doubly linked list to 
+		store the elements.
+             - Manipulation with LinkedList is faster than ArrayList
+             - LinkedList class can act as a list and queue 
+                  both because it implements List and Deque interfaces.
+             - No default capacity
+             
+      Vector(C) - 1.0v - legacy classes
+             - Vector is synchronized
+             - A Vector can use the Iterator interface or 
+                  Enumeration interface to traverse the elements.
+             - Vector is slow because it is synchronized
+             - incremental capacity is double the size
+          Stack(C) -
+             - Stacks, presents LIFO data structure. 
+             - The last elements added is the first to move out. 
+               push(), pop(), peek(),
+      
+  Set(I)
+     - duplicates not allowed
+     - insertion order won't maintain
+     - null - depending on implementation class.
+
+     HashSet(C)
+     LinkedHashSet(C)
+     SortedSet(I)
+        NavigableSet(I)
+           TreeSet(C)
+   
+  Queue(I)
+        - In queues, the element is added from one end and 
+ 	    comes off from another end. (FIFO structure)
+          add()  : adds another element to the end.
+	  peek() : returns a copy of the first element.
+          remove () : removes the element from the top, 
+			returns an error if its empty.
+          poll () : removes the element from the top ,
+		     returns null if the element is empty.
+     PriorityQueue(C)
+     Deque(I)
+       ArrayDeque(C)
+-------------------------------
+Map(I)
+  HashMap(C)
+    LinkedHashMap(C)
+  SortedMap(I)
+    NavigableMap(I)
+      TreeMap(C)
+  HashTable - 1.0v 
+    - legacy class
+    - Thread safe
+    
+   
+

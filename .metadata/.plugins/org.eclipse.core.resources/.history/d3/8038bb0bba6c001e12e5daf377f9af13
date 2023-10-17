@@ -1,0 +1,7 @@
+package day8;
+
+public class Employee {
+
+	private int empId;
+	private String name;
+}
