@@ -1,6 +1,7 @@
 package day8;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -57,7 +58,8 @@ public class CollectionDemo {
 		 * null values allowed
 		 * Read operations
 		 */
-		List lst = new ArrayList();
+		//List lst = new ArrayList();
+		List lst = new LinkedList();
 		lst.add(100);
 		lst.add(200);
 		lst.add(100);
@@ -89,7 +91,7 @@ public class CollectionDemo {
 		}
 		         
 		// Generics - Homogeneous element
-		IntegerList<> lst2 	= new Stack<>();// loose coupling
+		List<Integer> lst2 	= new ArrayList<>();// loose coupling
 		
 	
 		//ArrayList arrList = new ArrayList(); // tight coupling
@@ -139,11 +141,80 @@ public class CollectionDemo {
 		
 		System.out.println(lst2.subList(0, 2));
 		
+		System.out.println();
+		System.out.println(lst);
+		System.out.println(lst2);
+		System.out.println("before adding lst elements: "+lst2 );	
+		lst2.addAll(lst);
+		System.out.println("After adding lst elements: "+lst2);
 		
-		//
+		System.out.println();
+		lst2.remove(0);
+		System.out.println(lst2);
+		
+		lst2.remove("abc");
+		System.out.println(lst2);
+		
+		lst2.set(1, 30000);
+		System.out.println(lst2);
+		
+		// search
+		System.out.println(lst2.contains(100)); // true
+		
+		System.out.println(lst2.isEmpty()); // false
 		
 		
-
+		// Vector - 1.0v - legacy class
+		List<String> v = new LinkedList<>();
+		v.add("aa");
+		v.add(null);
+		v.add("bb");
+		v.set(1, "cc");
+	
+		System.out.println();
+		Vector<Character> vector = new Vector<>();
+		vector.add('c');
+		vector.addElement('a');
+		vector.addElement('b');
+		vector.addElement('c');
+		vector.addElement('d');
+		System.out.println(vector);
+		vector.removeElement('c');
+		System.out.println("after remove: "+vector);
+		System.out.println(vector.elementAt(0));
+		// read - for, iterator, listIterator, Enumeration
+		Enumeration e = vector.elements();
+		while(e.hasMoreElements()) {
+			System.out.println(e.nextElement());
+		}
+		
+		
+		// Stack(C) - LIFO
+		
+		Stack<String> s = new Stack<>();
+		
+		System.out.println();
+		// Add elements
+		s.add("ee");
+		s.push("ff");
+		s.push("gg");
+		
+		System.out.println(s);
+		// peek element
+		System.out.println(s.peek());
+		
+		// pop - remove last inserted element
+		s.pop();
+		System.out.println(s);
+		
+		// search
+		System.out.println(s.search("ee"));
+		
+		System.out.println(s.empty());// false
+	
+		
+		
+		
 	}
 
 }

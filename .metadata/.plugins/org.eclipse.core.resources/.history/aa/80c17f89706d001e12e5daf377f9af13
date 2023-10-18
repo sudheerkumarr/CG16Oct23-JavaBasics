@@ -1,0 +1,22 @@
+package Day9;
+
+/*
+ *   Set(I) - Iterator, for
+ *     HashSet(C)
+ *     LinkedHashSet(C)
+ *     SortedSet(I)
+ *        TreeSet(C)
+ *        
+ *   - duplicates not allowed
+ *   - insertion order won't maintain
+ *   - null - depending on implementation class.
+ *   
+ */
+public class SetDemo {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

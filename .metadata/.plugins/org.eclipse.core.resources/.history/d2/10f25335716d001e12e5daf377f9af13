@@ -1,0 +1,52 @@
+package Day9;
+
+import java.util.HashSet;
+import java.util.Set;
+
+/*
+ *   Set(I) - Iterator, for
+ *     HashSet(C)
+ *     LinkedHashSet(C)
+ *     SortedSet(I)
+ *       NavigableSet(I)
+ *         TreeSet(C)
+ *        
+ *   - duplicates not allowed
+ *   - insertion order won't maintain
+ *   - null - depending on implementation class.
+ *   
+ */
+public class SetDemo {
+
+	public static void main(String[] args) {
+		
+		Set hs = new HashSet();
+		//HashSet hs = new HashSet();
+		
+		hs.add("aa");
+		hs.add(true);
+		hs.add(1000);
+		
+		
+		HashSet<Integer> hs2 = new HashSet();
+		hs2.add(100);
+		hs2.add(200);
+		
+		for(Integer e:hs2) {
+			System.out.println(e);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
