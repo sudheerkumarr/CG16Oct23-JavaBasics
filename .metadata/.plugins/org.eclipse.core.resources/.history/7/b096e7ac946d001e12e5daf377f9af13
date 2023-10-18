@@ -1,0 +1,19 @@
+package Day9;
+/*
+ * Map(I)
+  HashMap(C)
+    LinkedHashMap(C)
+  SortedMap(I)
+    NavigableMap(I)
+      TreeMap(C)
+  HashTable - 1.0v 
+    - legacy class
+    - Thread safe
+ */
+public class MapDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

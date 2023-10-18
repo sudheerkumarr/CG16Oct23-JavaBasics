@@ -1,0 +1,9 @@
+package Day9;
+
+public class Student {
+
+	// Fields
+	private int rollNo;
+	private String name;
+	private int age;
+}

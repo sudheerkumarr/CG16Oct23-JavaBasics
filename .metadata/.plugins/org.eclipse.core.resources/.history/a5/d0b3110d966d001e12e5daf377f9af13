@@ -1,0 +1,24 @@
+package Day9;
+
+public class Student {
+
+	// Fields
+	private int rollNo;
+	private String name;
+	private int age;
+	
+	// Constructor
+	public Student() {
+		super();
+	}
+
+
+	public Student(int rollNo, String name, int age) {
+		super();
+		this.rollNo = rollNo;
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+}
