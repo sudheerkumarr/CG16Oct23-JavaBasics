@@ -1,4 +1,4 @@
-package Day9;
+package day9;
 
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -54,8 +54,11 @@ public class MapDemo {
 		System.out.println();
 		Iterator itr= e.iterator();
 		
+		
 		while(itr.hasNext()) {
-			System.out.println(itr.next());
+			Map.Entry<String, Integer> entry = (Map.Entry)itr.next();
+			//System.out.println(itr.next());
+			System.out.println(entry.getKey()+" | "+entry.getValue());
 		}
 			
 		System.out.println(hm.size()); // size of map
