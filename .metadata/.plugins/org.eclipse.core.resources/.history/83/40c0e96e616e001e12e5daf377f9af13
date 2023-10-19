@@ -1,0 +1,21 @@
+package day10;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * Stream API 
+ * - used to process collection objects.
+ * - A stream in Java is a sequence of objects 
+ *    that supports various methods which
+ *    can be pipelined to produce the 
+ *    desired result.  
+ */
+
+public class StreamDemo {
+
+	public static void main(String[] args) {
+		List<Integer> intArr= new ArrayList<>();
+	}
+
+}

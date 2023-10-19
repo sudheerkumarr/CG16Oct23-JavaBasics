@@ -1,0 +1,17 @@
+package day10;
+/*
+ * Stream API 
+ * - Process collections of objects.
+ * - A stream in Java is a sequence of objects that
+ *    supports various methods which
+ *    can be pipelined to produce the 
+ *    desired result.  
+ */
+
+public class StreamDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
