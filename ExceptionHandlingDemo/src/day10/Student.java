@@ -51,11 +51,11 @@ public class Student {
 		return this.age;
 	}
 
-
-	@Override
-	public String toString() {
-		return rollNo +" | "+ name;
-	}
+//
+//	@Override
+//	public String toString() {
+//		return rollNo +" | "+ name;
+//	}
 	
 	
 }
