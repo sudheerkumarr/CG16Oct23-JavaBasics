@@ -37,14 +37,29 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 
 	@Override
 	public void deleteCustomerByName(String name) {
-		// TODO Auto-generated method stub
-
+		for(int i=0; i<custList.size(); i++) {
+			// remove customer from db if present.
+			if(custList.get(i).getName().equals(name)) {
+				custList.remove(i);
+			}
+		}
 	}
 
 	@Override
-	public Customer updateCustomerContactNo(String name, String contactNo) {
-		// TODO Auto-generated method stub
-		return null;
+	public String updateCustomerContactNo(String name, String contactNo) {
+		// find the customer obj based on given name.
+		for(int i=0; i<custList.size();i++) {
+			
+			// if customer is present, then update
+			if(custList.get(i).getName().equals(name)) {
+				Customer c = custList.get(i);
+				// update existing customer contactNo.
+				c.setContactNo(contactNo);
+				custList.set(i, c);
+			}
+		}
+			
+		return contactNo;
 	}
 
 	@Override

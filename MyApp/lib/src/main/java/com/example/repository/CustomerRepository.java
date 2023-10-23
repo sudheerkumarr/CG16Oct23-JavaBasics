@@ -10,7 +10,7 @@ public interface CustomerRepository {
     List<Customer> getCustomerByName(String name);
     Customer getCustomerById(int id);
     void deleteCustomerByName(String name);
-    Customer updateCustomerContactNo(String name, String contactNo);
+    String updateCustomerContactNo(String name, String contactNo);
     Customer updateCustomerEmail(String name, String email);
     Customer updateCustomer(String name, Customer customer);
 

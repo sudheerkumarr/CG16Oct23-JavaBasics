@@ -34,18 +34,18 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public void deleteCustomerByName(String name) {
-		// TODO Auto-generated method stub
+		custRepo.deleteCustomerByName(name);
 
 	}
 
 	@Override
-	public Customer updateCustomerContactNo(String name, String contactNo) {
-		// TODO Auto-generated method stub
-		return null;
+	public String updateCustomerContactNo(String name, String contactNo) {
+		// call repository method to update contact number
+		return custRepo.updateCustomerContactNo(name, contactNo);
 	}
 
 	@Override
-	public Customer updateCustomerEmail(String name, String email) {
+	public String updateCustomerEmail(String name, String email) {
 		// TODO Auto-generated method stub
 		return null;
 	}

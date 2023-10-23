@@ -62,7 +62,7 @@ public class MyApp {
 				case 2:
 					List<Customer> cList= custService.getAllCustomers();
 					System.out.println(cList.size());
-					System.out.println(cList.get(0));
+					//System.out.println(cList.get(0));
 					System.out.println(cList);
 					break;
 
@@ -76,9 +76,27 @@ public class MyApp {
 					break;
 
 				case 4:
+					// Update contact no.
+					// get input from user
+					System.out.println("Enter customer name: ");
+					String name2 = sc.next();
+					System.out.println("Enter new contact number: ");
+					String cNo2 = sc.next();
+					
+					// Call service method to update contact no in db.
+					String uCNo= custService.updateCustomerContactNo(name2, cNo2);
+					
+					// print response
+					System.out.println(uCNo);
 					break;
 
 				case 5:
+					// delete
+					System.out.println("Enter customer name to delete");
+					String cName = sc.next();
+					
+					// call service method to delete
+					custService.deleteCustomerByName(cName);
 					break;
 
 				default:
