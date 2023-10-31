@@ -1,5 +1,0 @@
-package Day9;
-
-public class SortByRollNo implements Comperator<Student> {
-
-}

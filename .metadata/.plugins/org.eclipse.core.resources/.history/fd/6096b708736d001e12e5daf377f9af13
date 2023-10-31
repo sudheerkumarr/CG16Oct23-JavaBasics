@@ -1,6 +1,0 @@
-package Day9;
-
-public class Employee {
-	private int empId;
-	private String name;
-}

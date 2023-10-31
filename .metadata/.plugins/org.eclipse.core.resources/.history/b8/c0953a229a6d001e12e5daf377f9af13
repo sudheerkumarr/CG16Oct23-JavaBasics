@@ -1,7 +1,0 @@
-package Day9;
-
-import java.util.Comparator;
-
-public class SortByRollNo implements Comparator<Student> {
-
-}
